@@ -1,0 +1,5 @@
+Model accuracy of Simple Linear Regression: 66.90412331929895% 
+Model accuracy of Polynomial Regression: 99.73922891706614% 
+Model accuracy of Random Forest Regression: 95.4903546461464% 
+Model accuracy of Decision Tree Regression: 100.0% 
+Model accuracy of Support Vector Regression: 75.16001070620797% 
