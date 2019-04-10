@@ -6,6 +6,6 @@ sklearn package should be installed and path variable should be configured prope
 
 ## Repo Structure
 
-'dataset.csv' : A dataset of 25,000 highly polar movie reviews for binary sentiment classification\\
-'Accuracy.txt' : A text file which shows the accuracy of sentiment analysis model\\
+'dataset.csv' : A dataset of 25,000 highly polar movie reviews for binary sentiment classification\
+'Accuracy.txt' : A text file which shows the accuracy of sentiment analysis model\
 'sentiment analysis.py' : Contains Model learning code & the classifier used here is Naive Bayes
