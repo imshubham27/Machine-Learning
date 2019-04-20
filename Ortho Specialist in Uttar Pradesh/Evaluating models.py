@@ -17,14 +17,8 @@ a3="Model accuracy of Random Forest Regression: "
 b3=(r2_score(y,y_pred_ran)*100)
 c3='{}{}{}'.format(a3,b3,'% \n')
 
-# DecisionTree Regression
-from sklearn.metrics import r2_score
-a4="Model accuracy of Decision Tree Regression: "
-b4=(r2_score(y,y_pred_dec)*100)
-c4='{}{}{}'.format(a4,b4,'% \n')
 
-
-lines=[c1,c2,c3,c4]
+lines=[c1,c2,c3]
 
 
 txt_file=open('Model_accuracy.txt','w')

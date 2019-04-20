@@ -1,4 +1,4 @@
-
+import pandas as pd
 
 dataset = pd.read_csv('Processed_Dataset.csv')
 X = dataset.iloc[:, [1,5]].values
@@ -48,9 +48,5 @@ regressor = RandomForestRegressor(n_estimators = 280, random_state = 0)
 regressor.fit(X, y)
 y_pred_ran=regressor.predict(X)
 
-#DecisionTree Regression
-from sklearn.tree import DecisionTreeRegressor
-regressor = DecisionTreeRegressor(random_state = 0)
-regressor.fit(X, y)
-y_pred_dec=regressor.predict(X)
+
 
