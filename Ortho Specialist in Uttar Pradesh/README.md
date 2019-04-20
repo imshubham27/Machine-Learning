@@ -19,7 +19,7 @@ Model accuracy of Decision Tree Regression: 99.30385669029833%
 
 ## Scrapping_data.csv
 
-Scrapped data of ortho specialist in Uttar Pradesh from the Google Search results: Ortho-Specialist name , Address , Ratings , People Vist
+Scrapped data of ortho specialist in Uttar Pradesh from the Google Search results: Ortho-Specialist name , Address , Ratings ,
 Details of People visit was scrapped from histogram of Popular Times<br/>
 ![Screenshot](Screenshot.png)<br/>
 Frequency of People was calculated from height of each individual bar of histogram on a particular day
