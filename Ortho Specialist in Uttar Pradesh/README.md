@@ -4,24 +4,24 @@ Below I have provided the details about my Repo
 
 # Pre-Requisite Libraries
 
-Numpy
-Selenium
-Pandas
-chromedriver.exe software
+Numpy<br/>
+Selenium<br/>
+Pandas<br/>
+chromedriver.exe software<br/>
 Download link for chromedriver(http://chromedriver.chromium.org/downloads)
 
 ## Model_Accuracy.txt
-Accuracy score of different regression used in training models
-Model accuracy of Simple Linear Regression: 77.22694587507564% 
-Model accuracy of Polynomial Regression: 95.90858582599812% 
-Model accuracy of Random Forest Regression: 86.78025951728222% 
+Accuracy score of different regression used in training models<br/>
+Model accuracy of Simple Linear Regression: 77.22694587507564% <br/>
+Model accuracy of Polynomial Regression: 95.90858582599812%<br/>
+Model accuracy of Random Forest Regression: 86.78025951728222%<br/>
 Model accuracy of Decision Tree Regression: 99.30385669029833% 
 
 ## Scrapping_data.csv
 
 Scrapped data of ortho specialist in Uttar Pradesh from the Google Search results: Ortho-Specialist name , Address , Ratings , People Vist
-Details of People visit was scrapped from histogram of Popular Times
-![Screenshot](Screenshot.png)
+Details of People visit was scrapped from histogram of Popular Times<br/>
+![Screenshot](Screenshot.png)<br/>
 Frequency of People was calculated from height of each individual bar of histogram on a particular day
 
 ## Processed_Dataset.csv
