@@ -1,6 +1,6 @@
 # IMDB movie reviews for Sentiment Analysis
 
-Movie Reviews Sentiment analysis tool written in Python using Scikit for running the machine learning models. The sentiments considered here is binary (0 or 1). 0 meaning negative sentiment of tweet and 1 meaning positive sentiment of tweet.
+Movie Reviews Sentiment analysis tool written in Python using Scikit for running the machine learning models. The sentiments considered here is binary (0 or 1). 0 meaning negative sentiment of review and 1 meaning positive sentiment of review.
 
 sklearn package should be installed and path variable should be configured properly before running this model
 
