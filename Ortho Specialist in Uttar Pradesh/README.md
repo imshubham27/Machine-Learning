@@ -17,7 +17,7 @@ Model accuracy of Polynomial Regression: 95.90858582599812%<br/>
 Model accuracy of Random Forest Regression: 86.78025951728222%<br/>
 Model accuracy of Decision Tree Regression: 99.30385669029833% 
 
-## Scrapping_data.csv
+## Scrapped_data.csv
 
 Scrapped data of ortho specialist in Uttar Pradesh from the Google Search results: Ortho-Specialist name , Address , Ratings ,
 Details of People visit was scrapped from histogram of Popular Times<br/>
@@ -32,10 +32,10 @@ Dataset pre processed for training model
 
 Python codes to scrap data from Google search results
 
-## Processed_data.py
+## Processed_Dataset.py
 
 Python codes to pre process data for training model
 
-## Evaluating_models.py
+## Evaluating models.py
 
 Python codes to evaluate accuracy of different Regressions used to train model
