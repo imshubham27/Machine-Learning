@@ -1,5 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 
 dataset = pd.read_csv('dataset.csv', encoding='latin-1',error_bad_lines=False,)
