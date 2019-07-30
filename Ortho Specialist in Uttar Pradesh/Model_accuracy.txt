@@ -1,4 +1,6 @@
 Model accuracy of Simple Linear Regression: 77.22694587507564% 
+
 Model accuracy of Polynomial Regression: 95.90858582599812% 
+
 Model accuracy of Random Forest Regression: 86.78025951728222% 
 
