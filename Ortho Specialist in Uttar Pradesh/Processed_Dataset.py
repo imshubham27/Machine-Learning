@@ -4,7 +4,7 @@ import re
 import numpy as np
 import time
 
-places_list=['Ghaziabad','Kanpur','Varanasi','Lucknow','Noida','Prayagraj','Agra','Bareilly']
+places_list=['Ghaziabad','Kanpur','Varanasi','Lucknow','Noida','Prayagraj','Agra','Meerut']
 l=[]
 d={}
 driver = webdriver.Chrome(r'C:\chromedriver.exe')
@@ -20,7 +20,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -51,7 +51,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -81,7 +81,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -111,7 +111,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -141,7 +141,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -171,7 +171,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -201,7 +201,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -232,7 +232,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -262,7 +262,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -292,7 +292,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -323,7 +323,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -353,7 +353,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -383,7 +383,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -413,7 +413,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -444,7 +444,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -475,7 +475,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -505,7 +505,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
@@ -535,7 +535,7 @@ ppl=np.array(ppl).astype(np.float)
 
 ortho=driver.find_element_by_class_name("SPZz6b")
 d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("Aq14fc")
 d["Ratings"]=(ratings.text)
 add=driver.find_element_by_class_name("LrzXr")
 for i in places_list:
