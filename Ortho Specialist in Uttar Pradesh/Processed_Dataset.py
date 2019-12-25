@@ -249,37 +249,7 @@ d["Sunday"]=0
 l.append(d)
 
 d={}
-driver.get('https://www.google.com/search?tbm=lcl&ei=X6i5XLqSC8vyvgTQ97bQBg&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&oq=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&gs_l=psy-ab.12...175077.175077.0.176536.1.1.0.0.0.0.467.467.4-1.1.0....0...1c.1.64.psy-ab..0.0.0....0.wqEhdg0skFQ#rlfi=hd:;si:2531011108605098125;mv:!1m2!1d30.246072599999998!2d83.3360771!2m2!1d25.0263754!2d76.9949341')
-time.sleep(3)
-ppl=[]
-item=driver.find_elements_by_css_selector('div.lubh-bar')
-for i in item:
-            ht=i.get_attribute('style')
-            num_ht=re.sub('[^0-9]', '', ht)
-            
-            ppl.append(num_ht)           
-ppl=np.array(ppl).astype(np.float)
-
-ortho=driver.find_element_by_class_name("SPZz6b")
-d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
-d["Ratings"]=(ratings.text)
-add=driver.find_element_by_class_name("LrzXr")
-for i in places_list:
-    if i in add.text:
-        break
-d["Address"]=i
-d["Monday"]=np.sum(ppl[:10])
-d["Tuesday"]=np.sum(ppl[10:19])
-d["Wednesday"]=np.sum(ppl[19:29])
-d["Thursday"]=np.sum(ppl[29:37])
-d["Friday"]=np.sum(ppl[37:45])
-d["Saturday"]=0
-d["Sunday"]=0
-l.append(d)
-
-d={}
-driver.get('https://www.google.com/search?tbm=lcl&ei=X6i5XLqSC8vyvgTQ97bQBg&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&oq=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&gs_l=psy-ab.12...175077.175077.0.176536.1.1.0.0.0.0.467.467.4-1.1.0....0...1c.1.64.psy-ab..0.0.0....0.wqEhdg0skFQ#rlfi=hd:;si:14408144680204682107;mv:!1m2!1d30.246072599999998!2d83.3360771!2m2!1d25.0263754!2d76.9949341')
+driver.get('https://www.google.com/search?sa=X&biw=1002&bih=722&sxsrf=ACYBGNSXHYUvO9l4PV7z-qF6OSAxFsfpIw:1577292384259&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits&npsic=0&rflfq=1&rlha=0&rllag=28632801,77359922,2014&tbm=lcl&ved=2ahUKEwjR3pSCoNHmAhXrILcAHRJ4DzIQjGp6BAgKEE4&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e3!2m1!1e16!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:5006960691101431168,l,CjFvcnRobyBzcGVjaWFsaXN0IGluIFV0dGFyIFByYWRlc2ggQmFzZWQgb24gdmlzaXRzWmYKMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHMiMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHM;mv:[[29.2034627,83.3362193],[25.085390999999998,76.9924222]];start:20')
 time.sleep(3)
 ppl=[]
 item=driver.find_elements_by_css_selector('div.lubh-bar')
@@ -301,16 +271,15 @@ for i in places_list:
 d["Address"]=i
 d["Monday"]=np.sum(ppl[:6])
 d["Tuesday"]=np.sum(ppl[6:12])
-d["Wednesday"]=np.sum(ppl[12:18])
-d["Thursday"]=np.sum(ppl[18:24])
-d["Friday"]=np.sum(ppl[24:30])
-d["Saturday"]=np.sum(ppl[30:32])
-d["Sunday"]=np.sum(ppl[32:38])
+d["Wednesday"]=np.sum(ppl[12:19])
+d["Thursday"]=np.sum(ppl[19:25])
+d["Friday"]=np.sum(ppl[25:31])
+d["Saturday"]=np.sum(ppl[31:37])
+d["Sunday"]=np.sum(ppl[37:43])
 l.append(d)
 
-
 d={}
-driver.get('https://www.google.com/search?tbm=lcl&ei=X6i5XLqSC8vyvgTQ97bQBg&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&oq=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&gs_l=psy-ab.12...175077.175077.0.176536.1.1.0.0.0.0.467.467.4-1.1.0....0...1c.1.64.psy-ab..0.0.0....0.wqEhdg0skFQ#rlfi=hd:;si:2308886579239910683;mv:!1m2!1d30.246072599999998!2d83.3360771!2m2!1d25.0263754!2d76.9949341')
+driver.get('https://www.google.com/search?sa=X&biw=1002&bih=722&sxsrf=ACYBGNSXHYUvO9l4PV7z-qF6OSAxFsfpIw:1577292384259&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits&npsic=0&rflfq=1&rlha=0&rllag=28632801,77359922,2014&tbm=lcl&ved=2ahUKEwjR3pSCoNHmAhXrILcAHRJ4DzIQjGp6BAgKEE4&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e3!2m1!1e16!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:14180435733779092589,l,CjFvcnRobyBzcGVjaWFsaXN0IGluIFV0dGFyIFByYWRlc2ggQmFzZWQgb24gdmlzaXRzWmYKMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHMiMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHM;mv:[[29.2034627,83.3362193],[25.085390999999998,76.9924222]];start:20')
 time.sleep(3)
 ppl=[]
 item=driver.find_elements_by_css_selector('div.lubh-bar')
@@ -331,16 +300,17 @@ for i in places_list:
         break
 d["Address"]=i
 d["Monday"]=np.sum(ppl[:5])
-d["Tuesday"]=np.sum(ppl[5:13])
-d["Wednesday"]=np.sum(ppl[13:21])
-d["Thursday"]=np.sum(ppl[21:29])
-d["Friday"]=np.sum(ppl[29:37])
-d["Saturday"]=np.sum(ppl[37:42])
-d["Sunday"]=np.sum(ppl[42:47])
+d["Tuesday"]=np.sum(ppl[5:10])
+d["Wednesday"]=np.sum(ppl[10:15])
+d["Thursday"]=np.sum(ppl[15:20])
+d["Friday"]=np.sum(ppl[20:25])
+d["Saturday"]=np.sum(ppl[25:30])
+d["Sunday"]=0
 l.append(d)
 
+
 d={}
-driver.get('https://www.google.com/search?tbm=lcl&ei=1zu6XP-PKM-QwgPakIZ4&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&oq=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&gs_l=psy-ab.12...0.0.0.51160.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.7ckubR7pdHs#rlfi=hd:;si:5317694778498507992;mv:!1m2!1d29.040361599999997!2d83.31609259999999!2m2!1d25.091983799999998!2d76.97544429999999;start:20')
+driver.get('https://www.google.com/search?sa=X&biw=1002&bih=722&sxsrf=ACYBGNSXHYUvO9l4PV7z-qF6OSAxFsfpIw:1577292384259&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits&npsic=0&rflfq=1&rlha=0&rllag=28632801,77359922,2014&tbm=lcl&ved=2ahUKEwjR3pSCoNHmAhXrILcAHRJ4DzIQjGp6BAgKEE4&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e3!2m1!1e16!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:7348112883433184550,l,CjFvcnRobyBzcGVjaWFsaXN0IGluIFV0dGFyIFByYWRlc2ggQmFzZWQgb24gdmlzaXRzWmYKMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHMiMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHM;mv:[[29.2034627,83.3362193],[25.085390999999998,76.9924222]];start:20')
 time.sleep(3)
 ppl=[]
 item=driver.find_elements_by_css_selector('div.lubh-bar')
@@ -360,17 +330,108 @@ for i in places_list:
     if i in add.text:
         break
 d["Address"]=i
-d["Monday"]=np.sum(ppl[:13])
-d["Tuesday"]=np.sum(ppl[13:29])
-d["Wednesday"]=np.sum(ppl[29:45])
-d["Thursday"]=np.sum(ppl[45:51])
-d["Friday"]=np.sum(ppl[51:73])
-d["Saturday"]=np.sum(ppl[73:94])
-d["Sunday"]=np.sum(ppl[94:118])
+d["Monday"]=np.sum(ppl[:6])
+d["Tuesday"]=np.sum(ppl[6:12])
+d["Wednesday"]=np.sum(ppl[12:19])
+d["Thursday"]=np.sum(ppl[19:25])
+d["Friday"]=np.sum(ppl[25:31])
+d["Saturday"]=np.sum(ppl[31:37])
+d["Sunday"]=0
 l.append(d)
 
 d={}
-driver.get('https://www.google.com/search?tbm=lcl&ei=X6i5XLqSC8vyvgTQ97bQBg&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&oq=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&gs_l=psy-ab.12...175077.175077.0.176536.1.1.0.0.0.0.467.467.4-1.1.0....0...1c.1.64.psy-ab..0.0.0....0.wqEhdg0skFQ#rlfi=hd:;si:256443137894461394;mv:!1m2!1d29.2018913!2d83.32353239999999!2m2!1d25.082840599999997!2d76.9750232;start:20')
+driver.get('https://www.google.com/search?sa=X&biw=1002&bih=722&sxsrf=ACYBGNSXHYUvO9l4PV7z-qF6OSAxFsfpIw:1577292384259&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits&npsic=0&rflfq=1&rlha=0&rllag=28632801,77359922,2014&tbm=lcl&ved=2ahUKEwjR3pSCoNHmAhXrILcAHRJ4DzIQjGp6BAgKEE4&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e3!2m1!1e16!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:14408144680204682107,l,CjFvcnRobyBzcGVjaWFsaXN0IGluIFV0dGFyIFByYWRlc2ggQmFzZWQgb24gdmlzaXRzWmYKMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHMiMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHM;mv:[[29.2034627,83.3362193],[25.085390999999998,76.9924222]];start:20')
+time.sleep(3)
+ppl=[]
+item=driver.find_elements_by_css_selector('div.lubh-bar')
+for i in item:
+            ht=i.get_attribute('style')
+            num_ht=re.sub('[^0-9]', '', ht)
+            
+            ppl.append(num_ht)           
+ppl=np.array(ppl).astype(np.float)
+
+ortho=driver.find_element_by_class_name("SPZz6b")
+d["Ortho-Specialist Name"]=(ortho.text)
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+d["Ratings"]=(ratings.text)
+add=driver.find_element_by_class_name("LrzXr")
+for i in places_list:
+    if i in add.text:
+        break
+d["Address"]=i
+d["Monday"]=np.sum(ppl[:6])
+d["Tuesday"]=np.sum(ppl[6:12])
+d["Wednesday"]=np.sum(ppl[12:19])
+d["Thursday"]=np.sum(ppl[19:25])
+d["Friday"]=np.sum(ppl[25:31])
+d["Saturday"]=np.sum(ppl[31:33])
+d["Sunday"]=np.sum(ppl[33:39])
+l.append(d)
+
+d={}
+driver.get('https://www.google.com/search?sa=X&biw=1002&bih=722&sxsrf=ACYBGNSXHYUvO9l4PV7z-qF6OSAxFsfpIw:1577292384259&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits&npsic=0&rflfq=1&rlha=0&rllag=28632801,77359922,2014&tbm=lcl&ved=2ahUKEwjR3pSCoNHmAhXrILcAHRJ4DzIQjGp6BAgKEE4&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e3!2m1!1e16!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:16092805102936926721,l,CjFvcnRobyBzcGVjaWFsaXN0IGluIFV0dGFyIFByYWRlc2ggQmFzZWQgb24gdmlzaXRzWmYKMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHMiMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHM;mv:[[29.2034627,83.3362193],[25.085390999999998,76.9924222]];start:20')
+time.sleep(3)
+ppl=[]
+item=driver.find_elements_by_css_selector('div.lubh-bar')
+for i in item:
+            ht=i.get_attribute('style')
+            num_ht=re.sub('[^0-9]', '', ht)
+            
+            ppl.append(num_ht)           
+ppl=np.array(ppl).astype(np.float)
+
+ortho=driver.find_element_by_class_name("SPZz6b")
+d["Ortho-Specialist Name"]=(ortho.text)
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+d["Ratings"]=(ratings.text)
+add=driver.find_element_by_class_name("LrzXr")
+for i in places_list:
+    if i in add.text:
+        break
+d["Address"]=i
+d["Monday"]=np.sum(ppl[:6])
+d["Tuesday"]=np.sum(ppl[6:12])
+d["Wednesday"]=np.sum(ppl[12:19])
+d["Thursday"]=np.sum(ppl[19:25])
+d["Friday"]=np.sum(ppl[25:31])
+d["Saturday"]=np.sum(ppl[31:37])
+d["Sunday"]=0
+l.append(d)
+
+d={}
+driver.get('https://www.google.com/search?sa=X&biw=1002&bih=722&sxsrf=ACYBGNSXHYUvO9l4PV7z-qF6OSAxFsfpIw:1577292384259&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits&npsic=0&rflfq=1&rlha=0&rllag=28632801,77359922,2014&tbm=lcl&ved=2ahUKEwjR3pSCoNHmAhXrILcAHRJ4DzIQjGp6BAgKEE4&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e3!2m1!1e16!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:7257948700513881673,l,CjFvcnRobyBzcGVjaWFsaXN0IGluIFV0dGFyIFByYWRlc2ggQmFzZWQgb24gdmlzaXRzWmYKMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHMiMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHM;mv:[[29.2034627,83.3362193],[25.085390999999998,76.9924222]];start:20')
+time.sleep(3)
+ppl=[]
+item=driver.find_elements_by_css_selector('div.lubh-bar')
+for i in item:
+            ht=i.get_attribute('style')
+            num_ht=re.sub('[^0-9]', '', ht)
+            
+            ppl.append(num_ht)           
+ppl=np.array(ppl).astype(np.float)
+
+ortho=driver.find_element_by_class_name("SPZz6b")
+d["Ortho-Specialist Name"]=(ortho.text)
+ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
+d["Ratings"]=(ratings.text)
+add=driver.find_element_by_class_name("LrzXr")
+for i in places_list:
+    if i in add.text:
+        break
+d["Address"]=i
+d["Monday"]=np.sum(ppl[:9])
+d["Tuesday"]=np.sum(ppl[9:18])
+d["Wednesday"]=np.sum(ppl[18:27])
+d["Thursday"]=np.sum(ppl[27:36])
+d["Friday"]=np.sum(ppl[36:45])
+d["Saturday"]=np.sum(ppl[45:54])
+d["Sunday"]=0
+l.append(d)
+
+
+d={}
+driver.get('https://www.google.com/search?sa=X&biw=1002&bih=722&sxsrf=ACYBGNSXHYUvO9l4PV7z-qF6OSAxFsfpIw:1577292384259&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits&npsic=0&rflfq=1&rlha=0&rllag=28632801,77359922,2014&tbm=lcl&ved=2ahUKEwjR3pSCoNHmAhXrILcAHRJ4DzIQjGp6BAgKEE4&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e3!2m1!1e16!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:6723074238088024724,l,CjFvcnRobyBzcGVjaWFsaXN0IGluIFV0dGFyIFByYWRlc2ggQmFzZWQgb24gdmlzaXRzWmYKMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHMiMW9ydGhvIHNwZWNpYWxpc3QgaW4gdXR0YXIgcHJhZGVzaCBiYXNlZCBvbiB2aXNpdHM;mv:[[29.2034627,83.3362193],[25.085390999999998,76.9924222]];start:20')
 time.sleep(3)
 ppl=[]
 item=driver.find_elements_by_css_selector('div.lubh-bar')
@@ -395,68 +456,7 @@ d["Tuesday"]=np.sum(ppl[7:14])
 d["Wednesday"]=np.sum(ppl[14:21])
 d["Thursday"]=np.sum(ppl[21:28])
 d["Friday"]=np.sum(ppl[28:35])
-d["Saturday"]=np.sum(ppl[35:42])
-d["Sunday"]=0
-l.append(d)
-
-d={}
-driver.get('https://www.google.com/search?tbm=lcl&ei=X6i5XLqSC8vyvgTQ97bQBg&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&oq=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&gs_l=psy-ab.12...175077.175077.0.176536.1.1.0.0.0.0.467.467.4-1.1.0....0...1c.1.64.psy-ab..0.0.0....0.wqEhdg0skFQ#rlfi=hd:;si:12079158429058948304;mv:!1m2!1d29.2018913!2d83.32353239999999!2m2!1d25.082840599999997!2d76.9750232;start:20')
-time.sleep(3)
-ppl=[]
-item=driver.find_elements_by_css_selector('div.lubh-bar')
-for i in item:
-            ht=i.get_attribute('style')
-            num_ht=re.sub('[^0-9]', '', ht)
-            
-            ppl.append(num_ht)           
-ppl=np.array(ppl).astype(np.float)
-
-ortho=driver.find_element_by_class_name("SPZz6b")
-d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
-d["Ratings"]=(ratings.text)
-add=driver.find_element_by_class_name("LrzXr")
-for i in places_list:
-    if i in add.text:
-        break
-d["Address"]=i
-d["Monday"]=np.sum(ppl[:12])
-d["Tuesday"]=np.sum(ppl[12:24])
-d["Wednesday"]=np.sum(ppl[24:36])
-d["Thursday"]=np.sum(ppl[36:48])
-d["Friday"]=np.sum(ppl[48:60])
-d["Saturday"]=np.sum(ppl[60:72])
-d["Sunday"]=np.sum(ppl[72:84])
-l.append(d)
-
-
-d={}
-driver.get('https://www.google.com/search?tbm=lcl&ei=X6i5XLqSC8vyvgTQ97bQBg&q=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&oq=ortho+specialist+in+Uttar+Pradesh+Based+on+visits+to+this+place.&gs_l=psy-ab.12...175077.175077.0.176536.1.1.0.0.0.0.467.467.4-1.1.0....0...1c.1.64.psy-ab..0.0.0....0.wqEhdg0skFQ#rlfi=hd:;si:12634343961495901149;mv:!1m2!1d29.2018913!2d83.32353239999999!2m2!1d25.082840599999997!2d76.9750232;start:20')
-time.sleep(3)
-ppl=[]
-item=driver.find_elements_by_css_selector('div.lubh-bar')
-for i in item:
-            ht=i.get_attribute('style')
-            num_ht=re.sub('[^0-9]', '', ht)
-            
-            ppl.append(num_ht)           
-ppl=np.array(ppl).astype(np.float)
-
-ortho=driver.find_element_by_class_name("SPZz6b")
-d["Ortho-Specialist Name"]=(ortho.text)
-ratings=driver.find_element_by_class_name("Ob2kfd").find_element_by_class_name("rtng")
-d["Ratings"]=(ratings.text)
-add=driver.find_element_by_class_name("LrzXr")
-for i in places_list:
-    if i in add.text:
-        break
-d["Address"]=i
-d["Monday"]=np.sum(ppl[:7])
-d["Tuesday"]=np.sum(ppl[7:14])
-d["Wednesday"]=np.sum(ppl[14:21])
-d["Thursday"]=0
-d["Friday"]=np.sum(ppl[21:28])
-d["Saturday"]=0
+d["Saturday"]=np.sum(ppl[35:41])
 d["Sunday"]=0
 l.append(d)
 
